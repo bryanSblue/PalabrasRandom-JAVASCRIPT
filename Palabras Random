@@ -1,0 +1,18 @@
+  let palabras = () => {
+    let palabrasP = ['La vida no seria nada sin los sueños hechos realidad', 'Los dos dias mas importantes de tu vida son el dia que naces y el dia que te das cuenta por que',
+'Cuando mas sientas que ya no puedes mas, ahi es cuando mas fuerte te estas volviendo', 'Ama tu vida como te gustaria que te amen a ti',
+'El exito es 1% inspiracion y 99% transpiracion', 'Ya no llores mi pana']
+    let palabrasD = ['sigue luchando.', 'y lograrás todo lo que te propongas.', 'que nada te detenga.', 'sigue adealnte.', 'no te awites bro.']
+    let suerte = [23,65,888,1,34,5,2,7,7777,54,86,34]
+
+    let palrandom = palabrasP[Math.floor(Math.random() *palabrasP.length)]
+    let pal2random = palabrasD[Math.floor(Math.random() *palabrasD.length)]
+    let numsuerte = suerte[Math.floor(Math.random() *suerte.length)]
+
+  const mensaje = "MENSAJE: " + palrandom + ", las cosas pasan por algo, " + pal2random ;
+  const mensaje2 = " TU NUMERO DE LA SUERTE ES: " + numsuerte + "... aaaah perroooooo";
+
+return mensaje + mensaje2
+}
+
+console.log(palabras());
